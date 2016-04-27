@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>Save The Reef</title>
+        <meta name="description" content="Save The Reef" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    
+    <style>
+        a:link {text-decoration:none;}    /* unvisited link */
+        a:visited {text-decoration:none;} /* visited link */
+        a:hover {text-decoration:none;}   /* mouse over link */
+        a:active {text-decoration:none;}  /* selected link */
+    </style>
+
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+        <h1>Save The Reef</h1>
+        </div>
+        
+        <div class="topbar">
+        </div>
+        
+        <div class="hero">
+        <img src="images/desktophero.gif" alt="hero"/>
+        </div>
+        
+        <div class="ad">
+        <img src="images/ad.gif" alt="hero"/>
+        </div>
+        
+        <nav class="mainmenu">
+                <a href="#" onclick="toggle_visibility('menu');">
+					<img src="images/hmenu.gif" alt="main menu button"/>
+				</a>
+        </nav>
+        
+        <nav class="menudrop" id="menu">
+            <ul class="hamburger">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="#">ARCHIVE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <div class="article">
+        <h2>The Great Barrier Reef is at stake.</h2>
+        </div>
+        
+        <div class="summary">
+        <p>Our ocean's Great Barrier Reef has been a landmark of this world's natural beauty. However, as of late, this chain of reefs off of Australia has been deteriorating at an alarming rate. See what's been happening and what you can do to help.</p>
+        </div>
+        
+        <div class="articletext">
+        <a href="http://www.google.com" target="_blank">Click here to learn more.</a>
+        </div>
+        
+        
+        <div class="articlepic">
+        <img src="images/articleone.gif" alt="main menu button"/>
+        </div>
+        
+        
+        <div class="article">
+        <h2>Oceans Becoming Too Acidic</h3>
+        </div>
+        
+        <div class="summary">
+        <p>March 16, 2016</p>
+        </div>
+        
+        <div class="articlepic">
+        <img src="images/articletwo.gif" alt="main menu button"/>
+        </div>
+                 
+        
+            
+        <div class="copyright">
+        <h4>© 2016 Save The Reef. All rights reserved.</h4>
+        </div>
+        
+        
+        
+    </div>
+    
+    <footer>
+        <div class="foot">
+        <h6>LOAD MORE...</h6></div>
+    </footer>
+     <!-- Place this script at the end of your body -->
+        <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+    
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+        if ($(window).scrollTop() >= 410) {
+           $('nav').addClass('fixed-header');
+        }
+        else {
+           $('nav').removeClass('fixed-header');
+        }
+        });
+    </script>-->
+    </body>

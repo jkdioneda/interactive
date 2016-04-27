@@ -1,0 +1,800 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+
+/* Your CSS Starts here */
+/* Place google fonts code here */
+<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,400); */
+/* Place google fonts code here */
+
+html,body {
+
+}
+
+/* Divs start here */
+.wrapper {
+	background-color: #4e7784;
+	position: relative;
+	width: 100%;
+    height: auto;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+    float: left;
+	
+}
+
+.header {
+    position: fixed;
+	background-color: #91a9bb;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+}
+
+.hero {
+    position: fixed;
+	background-color: none;
+	width: 100%;
+    height: 60%;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+    display: none;
+    float: left;
+} 
+
+.ad {
+    position: fixed;
+	background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+    display: none;
+    float: left;
+} 
+
+.title {
+    position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: left;
+    margin-top: 25%;
+    margin-bottom: none;
+	overflow: hidden; /*fixes collapsing div*/
+    z-index: 20;
+}
+
+.article {
+    position: absolute;
+    background-color: none;
+	width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: right;
+    margin-top: 25%;
+    margin-bottom: none;
+	overflow: hidden; /*fixes collapsing div*/
+    z-index: 20;
+}
+
+.articletext {
+    position: absolute;
+    background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: right;
+    margin-top: 50%;
+    margin-right: none;
+    margin-bottom: none;
+    margin-left: -2.5%;
+	overflow: hidden; /*fixes collapsing div*/
+    z-index: 20;
+}
+
+.articlepic {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: auto;
+    height: 55%;
+    margin-top: none;
+    margin-bottom: 5%;
+	overflow: hidden; /*fixes collapsing div*/
+    opacity:.7;
+    z-index: 10;
+	
+}
+
+.sidebar {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: 40%;
+    height: 100%;
+    margin-bottom: none;
+    margin-top; 40%;
+	overflow: hidden; /*fixes collapsing div*/
+    opacity:.7;
+    float: right;
+    z-index: 10;
+    display: none;
+	
+}
+footer{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    z-index:10;
+    height:200px;
+    background-color:#91a9bb;
+    width:100%;
+    text-align:center;    
+}
+
+h6{
+   
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 2em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+    margin-top:10%;
+    
+}
+
+.summary {
+    position: absolute;
+	background-color: none;
+	width: 75%;
+    height: auto;
+    text-align: left;
+	margin-left: 23%;
+	margin-top: 33.5%;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 20;
+}
+
+.load {
+    position: relative;
+	background-color: #91a9bb;
+	width: 100%;
+    height: auto;
+    text-align: center;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+}
+
+.copyright {
+    position: relative;
+	background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	
+}
+
+.mainmenu {
+	position: fixed;
+	width: 30px;
+    height: auto;
+	left: 80%;
+	top: 15px;
+	z-index: 40;
+}
+
+.menudrop {
+	position: fixed;
+	background: #91a9bb;
+	width: 100%;
+	height: auto;
+	left: 0%;
+	top: 12%;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+	
+}
+
+.hamburger {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+.hamburger_bar li {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	border-bottom: solid;
+	border-color: #FFFFE5;
+	border-width: 1px;
+	margin-left: 0%;
+	margin-top: 5%;
+	text-indent: 5%;
+	overflow: hidden;
+	z-index: 50;
+	
+}
+
+.hamburger a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-left: 50%;
+    margin-right: auto;
+	
+}
+
+.hamburger li:hover {
+	margin-top: none;
+	
+}
+
+body { margin:0px; padding:0px; }
+
+
+/* Text Styles start */
+p {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: 1.813em;
+    
+}
+
+h1 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.25em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    margin-left: 2.5%;
+    
+}
+
+h2 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 2em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+    padding: 10px;
+
+}
+
+.sub {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: none;
+	margin-bottom: none;
+
+}
+
+h3 {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+h4 {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: ..7em;
+	color: black;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+h5 {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: black;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+.copyright {
+    font-family: 'Archive Narrow', sans-serif;
+	font-size: 1em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+}
+
+/* Links */
+
+li a {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.5em;
+	color: white;
+	text-decoration: none;
+}
+
+a {
+	font-size: 1em;
+	font-weight: normal;    
+	color: white;
+	font-family: 'Archivo Narrow', sans-serif;
+	text-align: left;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #4e7784;
+	text-decoration: underline;
+}
+
+/* Turns off link borders on Firefox */
+a:active, a:focus {outline: 0;}
+
+/* You don’t need the following, yet */
+/* Media Query for tablets with at least 768px wide windows */	
+
+
+
+
+
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMEDIAQUERYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
+
+
+
+
+
+/* Media Query for desktops with at least 1200px wide windows */
+@media screen and (min-width:1200px)
+{
+	.wrapper {
+	background-color: none;
+	position: relative;
+	width: 100%;
+    height: auto;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+    float:left;
+}
+
+.header {
+    position: fixed;
+	background-color:none;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+    float:left;
+}
+    
+.hero {
+    position: fixed;
+	background-color: none;
+	width: 100%;
+    height: auto;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+    float:left;
+} 
+
+.article {
+    position:relative;
+    background-color: none;
+	width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: right;
+    margin-top: 25%;
+    margin-bottom: none;
+	overflow: hidden; /*fixes collapsing div*/
+    z-index: 20;
+}
+
+.articletext {
+    background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: right;
+    margin-top: 50%;
+    margin-right: none;
+    margin-bottom: none;
+	overflow: hidden; /*fixes collapsing div*/
+    z-index: 20;
+    display: inline-block;
+    position:absolute;
+    float:left;
+}
+    
+.sidebar {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: 40%;
+    height: 100%;
+    margin-bottom: none;
+    margin-top; 100%;
+	overflow: hidden; /*fixes collapsing div*/
+    opacity:.7;
+    float: right;
+    z-index: 10;
+    display: inline;
+	
+}
+
+.articlepic {
+	position: relative;
+    background-color: none;
+	width: 50%;
+    height: auto;
+    margin-top: none;
+    margin-bottom: 5%;
+	overflow: hidden; /*fixes collapsing div*/
+    float:left;
+}
+
+.summary {
+    position: relative;
+	background-color: none;
+	width: 75%;
+    height: auto;
+    text-align: right;
+    float:left;
+	margin-left: 23%;
+	margin-top: 33.5%;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 20;
+}
+
+.copyright {
+    position: absolute;
+	background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	
+}
+
+.mainmenu {
+	position: fixed;
+    height: auto;
+	left: 80%;
+	top: 15px;
+	z-index: 40;
+    display: none;
+}
+
+.menudrop {
+	position: fixed;
+	background: #91a9bb;
+	width: 100%;
+	height: auto;
+	left: 0%;
+	top: 12%;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+	
+}
+
+.hamburger {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+    display: none;
+	
+}
+
+.hamburger_bar li {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	border-bottom: solid;
+	border-color: #FFFFE5;
+	border-width: 1px;
+	margin-left: 0%;
+	margin-top: 5%;
+	text-indent: 5%;
+	overflow: hidden;
+	z-index: 50;
+	display: none;
+    
+}
+
+.hamburger a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-left: 50%;
+    margin-right: auto;
+	display: none;
+    
+}
+
+.hamburger li:hover {
+	margin-top: none;
+    display: none;
+	
+}
+
+body { margin:0px; padding:0px; }
+    
+    
+/*aaaaaaaaaaa this is where ya gonna add the stuff that's added on desktop DONT FORGET aaaaaaaaa*/
+
+.hero {
+    position: fixed;
+	background-color: none;
+	width: 100%;
+    height: auto;
+    text-align: left;
+	margin-left: none;
+	margin-top: none;
+    margin-right: none;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	z-index: 30;
+    display: inherit;
+    float: left;
+}    
+
+.menudrop {
+    position: relative;
+    background-color: none;
+	width: 100%;
+    text-align: center;
+    margin-left: none;
+	margin-right: auto;
+	margin-top: none;
+	margin-bottom: none;
+    float: left;
+	overflow: hidden; /*fixes collapsing div*/
+    display: block;
+    
+}
+
+/* Text Styles start */
+p {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: 1.813em;
+    width:20%;
+    
+}
+
+h1 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.5em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    margin-left: 2.5%;
+    
+}
+
+h2 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 2em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+    padding: 10px;
+
+}
+
+.sub {
+    position: relative;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: none;
+	margin-bottom: none;
+
+}
+
+h3 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+h4 {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: ..7em;
+	color: black;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+h5 {
+    position: absolute;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: .75em;
+	color: black;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 100px;
+	margin-bottom: none;
+
+}
+
+.copyright {
+    font-family: 'Archive Narrow', sans-serif;
+	font-size: 1em;
+	color: white;
+	font-style: normal;
+	letter-spacing: none;
+	line-height: none;
+}
+
+/* Links */
+
+li a {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.5em;
+	color: white;
+	text-decoration: none;
+}
+
+a {
+	font-size: 1em;
+	font-weight: normal;    
+	color: white;
+	font-family: 'Archivo Narrow', sans-serif;
+	text-align: left;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #4e7784;
+	text-decoration: underline;
+}
+
+
+	
+	
+}

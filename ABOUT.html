@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>About</title>
+        <meta name="description" content="About" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    
+    <style>
+        a:link {text-decoration:none;}    /* unvisited link */
+        a:visited {text-decoration:none;} /* visited link */
+        a:hover {text-decoration:none;}   /* mouse over link */
+        a:active {text-decoration:none;}  /* selected link */
+    </style>
+
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+        <h1>Save The Reef</h1>
+        </div>
+        
+        <div class="hero">
+        <img src="images/desktophero.gif" alt="Save The Reef"/>
+        </div>
+        
+        <nav class="mainmenu">
+                <a href="#" onclick="toggle_visibility('menu');">
+					<img src="images/hmenu.gif" alt="main menu buttonf" alt="main menu button"/>
+				</a>
+        </nav>
+        
+        <nav class="menudrop" id="menu">
+            <ul class="hamburger">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="#">ARCHIVE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar">
+            <img src="images/articleone.gif" alt="Sidebar">
+        </div>
+        
+        <div class="title">
+        <h2>About Us</h3>
+        </div>
+        
+        <div class="text">
+        <p>We are a blog that seeks to bring to light the recent issues pertaining to the Great Barrier Reef, a chain of coral reefs just outside of Australia.</p>
+        </div>
+        
+        <div class="title">
+        <h2>What's happening?</h3>
+        </div>
+        
+        <div class="text">
+        <p>Due to a plethora of ongoing events in the world, the Great Barrier Reef is a large risk of dying. Such events include global warming, an increased demand for coal mining, and harmful chemicals running into the ocean as a result of industrial processes.</p>
+        </div>
+            
+        <div class="copyright">
+        <h4>© 2016 Save The Reef. All rights reserved.</h4>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+     <!-- Place this script at the end of your body -->
+        <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+    
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+        if ($(window).scrollTop() >= 410) {
+           $('nav').addClass('fixed-header');
+        }
+        else {
+           $('nav').removeClass('fixed-header');
+        }
+        });
+    </script>-->
+    <body>
